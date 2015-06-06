@@ -813,7 +813,7 @@ func tagLength(data []byte, autolink *int) int {
 		i = 1
 	}
 
-	if !isalnum(data[i]) {
+	if !isalnum(data[i]) && data[i] != '!' {
 		return 0
 	}
 
